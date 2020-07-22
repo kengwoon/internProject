@@ -1,0 +1,68 @@
+html {
+	font-family: HelveticaNeue-Medium;
+	font-size: 16px;
+	color: #4A4A4A;
+}
+
+header {
+	font-family: HelveticaNeue-Medium;
+	font-size: 16px;
+	color: #4A4A4A;
+	text-align: center;
+	padding: 40px;
+}
+
+.subHeader {
+	font-family: HelveticaNeue-Regular;
+}
+
+.themeColor {
+	font-family: HelveticaNeue-Medium;
+	color: #D8232A;
+}
+
+.fieldLabel {
+	font-family: HelveticaNeue-Bold;
+	font-size: 15px;
+	color: #D8232A;
+	letter-spacing: 0.33px;
+
+	text-align: left;
+	margin-bottom: 10px
+}
+
+.labelHint {
+	font-family: HelveticaNeue-Medium;
+	color: #9B9B9B;
+}
+
+.fieldValue {
+	width: 536px;
+	height: 40px;
+	margin-bottom: 20px;
+}
+
+.option {
+	font-family: HelveticaNeue;
+	font-size:15px;
+	color: #4A4A4A;
+	letter-spacing: 0.33px;
+}
+
+.container {
+	: center;
+}
+
+.submitButton {
+	font-family: HelveticaNeue-Medium;
+	font-size:18px;
+	color: #FFFFFF;
+	letter-spacing: 0.4px;
+	text-align: center;
+
+	margin-top: 20px;
+	background-color: #D8232A; 
+	width: 536px;
+	height: 40px;
+}
+
