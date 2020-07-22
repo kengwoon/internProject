@@ -28,7 +28,8 @@ header {
 	letter-spacing: 0.33px;
 
 	text-align: left;
-	margin-bottom: 10px
+    display: inline-block;
+	padding-bottom: 10px
 }
 
 .labelHint {
@@ -37,20 +38,23 @@ header {
 }
 
 .fieldValue {
-	width: 536px;
-	height: 40px;
-	margin-bottom: 20px;
-}
+    width: 536px;
+    height: 40px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: #4A4A4A;
 
-.option {
-	font-family: HelveticaNeue;
-	font-size:15px;
-	color: #4A4A4A;
-	letter-spacing: 0.33px;
+    font-family: HelveticaNeue;
+    font-size: 15px;
+    color: #4A4A4A;
+    letter-spacing: 0.33px;
+    padding-left: 10px;
 }
 
 .container {
-	: center;
+    width: 536px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .submitButton {
@@ -64,5 +68,7 @@ header {
 	background-color: #D8232A; 
 	width: 536px;
 	height: 40px;
+    border: none;
+    border-radius: 2px;
 }
 
