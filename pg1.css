@@ -37,15 +37,21 @@ header {
     padding-bottom: 5px;
     background-color: #FFFFFF;
     border: 1px solid #D8232A;
-    border-radius: 0 3px 3px 0;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-#defaultTab {
+#leftTab {
+    border-radius: 3px 0 0 3px;
+}
+
+#rightTab {
+    border-radius: 0 3px 3px 0;
+}
+
+.selectedTab {
     background-color: #D8232A;
     color: #FFFFFF;
-    border-radius: 3px 0 0 3px;
 }
 
 .historyTab {
