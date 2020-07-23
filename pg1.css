@@ -25,22 +25,20 @@ header {
     justify-content: center;
 }
 
-#historyTab {
-    overflow-x: hidden;
-}
-
 .tablinks {
     font-family: HelveticaNeue-Medium;
     font-size: 14px;
     color: #D8232A;
     letter-spacing: 0.31px;
     text-align: center;
+
+    background-color: #FFFFFF;
+    border: 1px solid #D8232A;
+
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
-    background-color: #FFFFFF;
-    border: 1px solid #D8232A;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -125,12 +123,14 @@ select {
 	letter-spacing: 0.4px;
 	text-align: center;
 
-	margin-top: 20px;
 	background-color: #D8232A; 
+    border-radius: 4px;
+
+	margin-top: 20px;
 	width: 536px;
 	height: 40px;
     border: none;
-    border-radius: 4px;
+    outline: none;
 }
 
 
@@ -191,7 +191,7 @@ hr {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #888;
+    background: #4A4A4A;
 }
 
 .errorContainer {
