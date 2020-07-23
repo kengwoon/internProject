@@ -139,7 +139,6 @@ select {
     font-size: 18px;
     color: #D8232A;
     letter-spacing: 0.28px;
-    padding-top: 20px;
     padding-bottom: 20px;
 }
 
@@ -175,6 +174,7 @@ hr {
     border: 0;
     height: 1px;
     background: #9B9B9B;
+    margin-bottom: 20px;
 }
 
 /*** Scrollbar ***/
@@ -192,6 +192,27 @@ hr {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #888;
+}
+
+.errorContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.errorCode {
+    font-family: HelveticaNeue;
+    font-size: 100px;
+    color: #4A4A4A;
+    text-align: center;
+}
+
+.errorMessage {
+    font-family: HelveticaNeue-Light;
+    font-size: 24px;
+    color: #4A4A4A;
+    text-align: center;
 }
 
 @media screen and (max-width: 600px) {
