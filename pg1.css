@@ -83,6 +83,27 @@ header {
     padding-left: 10px;
 }
 
+.fieldValueDate {
+    margin-bottom: 20px;
+    font-family: HelveticaNeue;
+    color: #4A4A4A;
+
+    width: 522px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.fieldValueText {
+    margin-bottom: 20px;
+    font-family: HelveticaNeue;
+    color: #4A4A4A;
+
+    width: 520px;
+    height: 40px;
+    padding-left: 10px;
+
+}
+
 #pg2FieldValue {
     margin-bottom: 0px;
     padding-left: 0px;
@@ -153,6 +174,26 @@ select {
         font-size: 15px;
         color: #4A4A4A;
         letter-spacing: 0.33px;
+    }
+
+    .fieldValueDate {
+        margin-bottom: 20px;
+        font-family: HelveticaNeue;
+        color: #4A4A4A;
+
+        width: 280px;
+        height: 40px;
+        padding-left: 10px;
+    }
+
+    .fieldValueText {
+        margin-bottom: 20px;
+        font-family: HelveticaNeue;
+        color: #4A4A4A;
+
+        height: 40px;
+        padding-left: 10px;
+        width: 278px;
     }
 
     .container {
