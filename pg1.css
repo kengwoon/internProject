@@ -114,9 +114,17 @@ a {
 
 }
 
-#pg2FieldValue {
+.pg2FieldValue {
     margin-bottom: 0px;
     padding-left: 0px;
+
+    font-family: HelveticaNeue;
+    font-size: 15px;
+    color: #4A4A4A;
+    letter-spacing: 0.33px;
+
+    width: 536px;
+    height: 40px;
 }
 
 
@@ -245,6 +253,19 @@ hr {
         font-size: 15px;
         color: #4A4A4A;
         letter-spacing: 0.33px;
+    }
+
+    .pg2FieldValue {
+        margin-bottom: 0px;
+        padding-left: 0px;
+
+        font-family: HelveticaNeue;
+        font-size: 15px;
+        color: #4A4A4A;
+        letter-spacing: 0.33px;
+
+        width: 294px;
+        height: 40px;
     }
 
     .fieldValueDate {
