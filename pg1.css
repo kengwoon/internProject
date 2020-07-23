@@ -93,7 +93,7 @@ a {
     padding-left: 10px;
 }
 
-#pg2FieldValue {
+.pg2FieldValue {
     margin-bottom: 0px;
     padding-left: 0px;
 }
@@ -139,7 +139,7 @@ select {
     font-size: 18px;
     color: #D8232A;
     letter-spacing: 0.28px;
-    line-height: 20px;
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 
