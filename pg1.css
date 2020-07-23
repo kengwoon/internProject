@@ -31,6 +31,12 @@ header {
     }
 }
 
+@media screen and (max-width: 600px) {
+    body {
+        height: 100vh
+    }
+}
+
 .subHeader {
 	font-family: HelveticaNeue-Regular;
 }
@@ -95,6 +101,7 @@ header {
 @media screen and (max-width: 600px) {
     .container {
         width: 294px;
+        height: 100vh;
         margin-left: auto;
         margin-right: auto;
     }
@@ -122,6 +129,8 @@ header {
     	color: #FFFFFF;
     	letter-spacing: 0.4px;
     	text-align: center;
+    	position: absolute;
+    	bottom: 50px;
 
     	margin-top: 10px;
     	background-color: #D8232A;
