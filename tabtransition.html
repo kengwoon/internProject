@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="tabtransition.css">
+    <title>Daily Staff Movement and Health Declaration</title>
+  </head>
+  <body>
+      <div class="container">
+        <header class="pg2Header">
+          <div>Daily Staff Movement and Health Declaration</div>
+          <div class="subheader">Submissions will be <span class="themeColor"> final at 10am</span></div>
+        </header>
+        
+        <div>
+            <div class="tab">
+                <button class="tablinks leftTab" id="defaultTab" onclick="openTab(event, 'currentTab')">CURRENT</button>
+                <button class="tablinks rightTab" onclick="openTab(event, 'historyTab')">HISTORY</button>
+            </div>
+
+            <div id="currentTab" class="tabcontent">
+                <div class="fieldLabel">Movement Status</div>
+                <div class="fieldValue pg2FieldValue">Working in Office</div>
+                <div class="fieldLabel">Health Status</div>
+                <div class="fieldValue pg2FieldValue">Well</div>
+                <div class="fieldLabel">Travel History <span class="labelHint">(Past 14 days)</span></div>
+                <div class="fieldValue pg2FieldValue">No</div>
+
+                <input type="submit" class="submitButton" value="Update Status">
+            </div>
+
+            <div id="historyTab" class="tabcontent">
+                <div class="historyItem">
+
+                    <div class="historyDate">25 July 2020</div>
+                    <div class="historyContainer">
+                        <div class="historyData">
+                            <div class="historyLabel">Movement Status</div>
+                            <div class="historyValue">Working in Office</div>
+                        </div>
+
+                        <div class="historyData">
+                            <div class="historyLabel">Health Status</div>
+                            <div class="historyValue">Well</div>
+                        </div>
+
+                        <div class="historyData">
+                            <div class="historyLabel">Travel History <span class="labelHint">(Past 14 days)</span></div>
+                            <div class="historyValue">No</div>
+                        </div>
+                    </div>
+                    <hr />
+
+                    <div class="historyDate">25 July 2020</div>
+                    <div class="historyContainer">
+                        <div class="historyData">
+                            <div class="historyLabel">Movement Status</div>
+                            <div class="historyValue">Working in Office</div>
+                        </div>
+
+                        <div class="historyData">
+                            <div class="historyLabel">Health Status</div>
+                            <div class="historyValue">Well</div>
+                        </div>
+
+                        <div class="historyData">
+                            <div class="historyLabel">Travel History <span class="labelHint">(Past 14 days)</span></div>
+                            <div class="historyValue">No</div>
+                        </div>
+                    </div>
+                    <hr />
+
+                    <div class="historyDate">25 July 2020</div>
+                    <div class="historyContainer">
+                        <div class="historyData">
+                            <div class="historyLabel">Movement Status</div>
+                            <div class="historyValue">Working in Office</div>
+                        </div>
+
+                        <div class="historyData">
+                            <div class="historyLabel">Health Status</div>
+                            <div class="historyValue">Well</div>
+                        </div>
+
+                        <div class="historyData">
+                            <div class="historyLabel">Travel History <span class="labelHint">(Past 14 days)</span></div>
+                            <div class="historyValue">No</div>
+                        </div>
+                    </div>
+                    <hr />
+
+                    <div class="historyDate">25 July 2020</div>
+                    <div class="historyContainer">
+                        <div class="historyData">
+                            <div class="historyLabel">Movement Status</div>
+                            <div class="historyValue">Working in Office</div>
+                        </div>
+
+                        <div class="historyData">
+                            <div class="historyLabel">Health Status</div>
+                            <div class="historyValue">Well</div>
+                        </div>
+
+                        <div class="historyData">
+                            <div class="historyLabel">Travel History <span class="labelHint">(Past 14 days)</span></div>
+                            <div class="historyValue">No</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+      </div>
+
+      <script>
+          document.getElementById("defaultTab").click();
+
+          function openTab(evt, tabName) {
+              // Declare all variables
+              var i, tabcontent, tablinks;
+
+              // Get all elements with class="tabcontent" and hide them
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+
+              // Get all elements with class="tablinks" and remove the class "active"
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+
+              // Show the current tab, and add an "active" class to the button that opened the tab
+              document.getElementById(tabName).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+      </script>
+
+  </body>
+</html>

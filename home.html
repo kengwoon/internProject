@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="healthdeclaration.css">
+    <title>Daily Staff Movement and Health Declaration</title>
+    <script>
+      function showPage() {
+        var sel = document.getElementById('healthStatus');
+
+        var option = sel.options[sel.selectedIndex].value;
+
+        window.open(option);
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <div>Daily Staff Movement and Health Declaration</div>
+      <div class="subheader">Submissions will be <span class="themeColor"> final at 10am</span></div>
+    </header>
+
+    <form class="container" id="link">
+      <label for="movementStatus" class="fieldLabel"> Movement Status </label>
+      <br>
+      <select id="movementStatus" class="fieldValue">
+        <option value="workingInOffice"> Working in Office </option>
+      </select>
+      <br>
+      
+      <label for="healthStatus" class="fieldLabel"> Health Status </label>
+      <br>
+      <select id="healthStatus" class="fieldValue">
+        <option value="wellCurrent.html"> Well </option>
+        <option value="unwellLink.html"> Unwell </option>
+      </select>
+      <br>
+      
+      <label for="travelHistory" class="fieldLabel"> Travel History <span class="labelHint">(Past 14 days)</span></label>
+      <br>
+      <select id="travelHistory" class="fieldValue">
+        <option value="no"> No </option>
+      </select>
+      <br>
+
+      <input type="submit" class="submitButton" value="Submit" onclick="showPage()">
+    </form>
+  </body>
+
+</html>
