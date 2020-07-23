@@ -51,6 +51,20 @@ header {
     padding-left: 10px;
 }
 
+select::-ms-expand {
+    display: none;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background: url(Icon_Dropdown.svg) no-repeat;
+    background-position: right;
+    background-size: 10px;
+    background-position: 98% 50%
+}
+
 .container {
     width: 536px;
     margin-left: auto;
