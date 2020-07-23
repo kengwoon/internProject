@@ -25,6 +25,10 @@ header {
     justify-content: center;
 }
 
+#historyTab {
+    overflow-x: hidden;
+}
+
 .tablinks {
     font-family: HelveticaNeue-Medium;
     font-size: 14px;
@@ -37,19 +41,25 @@ header {
     padding-bottom: 5px;
     background-color: #FFFFFF;
     border: 1px solid #D8232A;
-    border-radius: 0 3px 3px 0;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-#defaultTab {
-    background-color: #D8232A;
-    color: #FFFFFF;
+a {
+    text-decoration: none;
+}
+
+#leftTab {
     border-radius: 3px 0 0 3px;
 }
 
-.historyTab {
-    overflow-y: scroll;
+#rightTab {
+    border-radius: 0 3px 3px 0;
+}
+
+.selectedTab {
+    background-color: #D8232A;
+    color: #FFFFFF;
 }
 
 .themeColor {
@@ -142,6 +152,67 @@ select {
 	height: 40px;
     border: none;
     border-radius: 4px;
+}
+
+
+.historyDate {
+    font-family: HelveticaNeue-Bold;
+    font-size: 18px;
+    color: #D8232A;
+    letter-spacing: 0.28px;
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+
+.historyContainer {
+    display: flex;
+    flex-flow: row wrap;
+    width: 536px;
+    align-items: flex-start;
+}
+
+.historyData {
+    flex-basis: 50%;
+}
+
+.historyLabel {
+    font-family: HelveticaNeue-Bold;
+    font-size: 15px;
+    color: #4A4A4A;
+    letter-spacing: 0.33px;
+    padding-bottom: 10px;
+}
+
+.historyValue {
+    font-family: HelveticaNeue;
+    font-size: 15px;
+    color: #4A4A4A;
+    letter-spacing: 0.33px;
+    padding-bottom: 20px;
+}
+
+hr {
+    width: 536px;
+    border: 0;
+    height: 1px;
+    background: #9B9B9B;
+}
+
+/*** Scrollbar ***/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F1F1F1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #9B9B9B;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
 }
 
 @media screen and (max-width: 600px) {
