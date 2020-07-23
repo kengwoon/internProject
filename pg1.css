@@ -4,15 +4,6 @@ html {
 	color: #4A4A4A;
 }
 
-/* On screens that are 600px or less, set the background color to olive */
-@media screen and (max-width: 600px) {
-    html {
-        font-family: HelveticaNeue-Medium;
-        font-size: 16px;
-        color: #4A4A4A;
-    }
-}
-
 header {
 	font-family: HelveticaNeue-Medium;
 	font-size: 16px;
@@ -23,22 +14,6 @@ header {
 
 .pg2Header {
     padding-bottom: 0px;
-}
-
-@media screen and (max-width: 600px) {
-    header {
-    	font-family: HelveticaNeue-Medium;
-    	font-size: 16px;
-    	color: #4A4A4A;
-    	text-align: center;
-    	padding: 20px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    body {
-        height: 100vh
-    }
 }
 
 .subHeader {
@@ -127,35 +102,10 @@ select {
     background-position: 98% 50%
 }
 
-@media screen and (max-width: 600px) {
-    .fieldValue {
-        width: 294px;
-        height: 40px;
-        margin-bottom: 20px;
-        font-size: 15px;
-        color: #4A4A4A;
-
-        font-family: HelveticaNeue;
-        font-size: 15px;
-        color: #4A4A4A;
-        letter-spacing: 0.33px;
-
-    }
-}
-
 .container {
     width: 536px;
     margin-left: auto;
     margin-right: auto;
-}
-
-@media screen and (max-width: 600px) {
-    .container {
-        width: 294px;
-        height: 100vh;
-        margin-left: auto;
-        margin-right: auto;
-    }
 }
 
 .submitButton {
@@ -174,6 +124,44 @@ select {
 }
 
 @media screen and (max-width: 600px) {
+    html {
+        font-family: HelveticaNeue-Medium;
+        font-size: 16px;
+        color: #4A4A4A;
+    }
+
+    header {
+    	font-family: HelveticaNeue-Medium;
+    	font-size: 16px;
+    	color: #4A4A4A;
+    	text-align: center;
+    	padding: 20px;
+    }
+
+    body {
+        height: 100vh
+    }
+
+    .fieldValue {
+        width: 294px;
+        height: 40px;
+        margin-bottom: 20px;
+        font-size: 15px;
+        color: #4A4A4A;
+
+        font-family: HelveticaNeue;
+        font-size: 15px;
+        color: #4A4A4A;
+        letter-spacing: 0.33px;
+    }
+
+    .container {
+        width: 294px;
+        height: 100vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .submitButton {
     	font-family: HelveticaNeue-Medium;
     	font-size:18px;
