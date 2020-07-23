@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="pg2.css">
+    <link rel="stylesheet" type="text/css" href="pg1.css">
     <title>Daily Staff Movement and Health Declaration</title>
   </head>
   <body>
       <div class="container">
-        <header>
+        <header class="pg2Header">
           <div>Daily Staff Movement and Health Declaration</div>
           <div class="subheader">Submissions will be <span class="themeColor"> final at 10am</span></div>
         </header>
@@ -21,11 +21,11 @@
 
             <div id="currentTab" class="tabcontent">
                 <div class="fieldLabel">Movement Status</div>
-                <div class="fieldValue">Working in Office</div>
+                <div class="fieldValue" id="pg2FieldValue">Working in Office</div>
                 <div class="fieldLabel">Health Status</div>
-                <div class="fieldValue">Well</div>
+                <div class="fieldValue" id="pg2FieldValue">Well</div>
                 <div class="fieldLabel">Travel History <span class="labelHint">(Past 14 days)</span></div>
-                <div class="fieldValue">No</div>
+                <div class="fieldValue" id="pg2FieldValue">No</div>
             </div>
 
             <div id="historyTab" class="tabcontent">
@@ -34,7 +34,7 @@
                 </div>
             </div>
 
-            <input type="submit" class="updateButton" value="Update Status">
+            <input type="submit" class="submitButton" value="Update Status">
         </div>
 
       </div>

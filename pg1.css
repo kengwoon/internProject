@@ -21,6 +21,10 @@ header {
 	padding: 40px;
 }
 
+.pg2Header {
+    padding-bottom: 0px;
+}
+
 @media screen and (max-width: 600px) {
     header {
     	font-family: HelveticaNeue-Medium;
@@ -41,20 +45,50 @@ header {
 	font-family: HelveticaNeue-Regular;
 }
 
+.tab {
+    display: flex;
+    justify-content: center;
+}
+
+.tablinks {
+    font-family: HelveticaNeue-Medium;
+    font-size: 14px;
+    color: #D8232A;
+    letter-spacing: 0.31px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #FFFFFF;
+    border: 1px solid #D8232A;
+    border-radius: 0 3px 3px 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#defaultTab {
+    background-color: #D8232A;
+    color: #FFFFFF;
+    border-radius: 3px 0 0 3px;
+}
+
+.historyTab {
+    overflow-y: scroll;
+}
+
 .themeColor {
 	font-family: HelveticaNeue-Medium;
 	color: #D8232A;
 }
 
 .fieldLabel {
-	font-family: HelveticaNeue-Bold;
-	font-size: 15px;
-	color: #D8232A;
-	letter-spacing: 0.33px;
-
-	text-align: left;
+    font-family: HelveticaNeue-Bold;
+    font-size: 15px;
+    color: #D8232A;
+    letter-spacing: 0.33px;
     display: inline-block;
-	padding-bottom: 10px
+    padding-bottom: 10px
 }
 
 .labelHint {
@@ -63,18 +97,22 @@ header {
 }
 
 .fieldValue {
-    width: 536px;
-    height: 40px;
     margin-bottom: 20px;
-    font-size: 15px;
-    color: #4A4A4A;
-
     font-family: HelveticaNeue;
     font-size: 15px;
     color: #4A4A4A;
     letter-spacing: 0.33px;
+    
+    width: 536px;
+    height: 40px;
     padding-left: 10px;
 }
+
+#pg2FieldValue {
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+
 
 select::-ms-expand {
     display: none;
