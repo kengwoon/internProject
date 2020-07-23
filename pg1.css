@@ -23,6 +23,7 @@ header {
 .tab {
     display: flex;
     justify-content: center;
+    align-items: stretch;
 }
 
 .tablinks {
@@ -91,11 +92,26 @@ a {
     padding-left: 10px;
 }
 
-.pg2FieldValue {
-    margin-bottom: 0px;
-    padding-left: 0px;
+.fieldValueDate {
+    margin-bottom: 20px;
+    font-family: HelveticaNeue;
+    color: #4A4A4A;
+
+    width: 522px;
+    height: 40px;
+    padding-left: 10px;
 }
 
+.fieldValueText {
+    margin-bottom: 20px;
+    font-family: HelveticaNeue;
+    color: #4A4A4A;
+
+    width: 520px;
+    height: 40px;
+    padding-left: 10px;
+
+}
 
 select::-ms-expand {
     display: none;
@@ -231,7 +247,8 @@ hr {
     }
 
     body {
-        height: 100vh
+        height: auto;
+        min-height: 93vh;
     }
 
     .fieldValue {
@@ -247,9 +264,43 @@ hr {
         letter-spacing: 0.33px;
     }
 
+    .pg2FieldValue {
+        margin-bottom: 0px;
+        padding-left: 0px;
+
+        font-family: HelveticaNeue;
+        font-size: 15px;
+        color: #4A4A4A;
+        letter-spacing: 0.33px;
+
+        width: 294px;
+        height: 40px;
+    }
+
+    .fieldValueDate {
+        margin-bottom: 20px;
+        font-family: HelveticaNeue;
+        color: #4A4A4A;
+
+        width: 280px;
+        height: 40px;
+        padding-left: 10px;
+    }
+
+    .fieldValueText {
+        margin-bottom: 20px;
+        font-family: HelveticaNeue;
+        color: #4A4A4A;
+
+        height: 40px;
+        padding-left: 10px;
+        width: 278px;
+    }
+
     .container {
         width: 294px;
-        height: 100vh;
+        height: auto;
+        min-height: 93vh;
         margin-left: auto;
         margin-right: auto;
     }
@@ -269,6 +320,44 @@ hr {
     	height: 40px;
         border: none;
         border-radius: 2px;
+    }
+
+    .submitButtonUnwell {
+    	font-family: HelveticaNeue-Medium;
+    	font-size:18px;
+    	color: #FFFFFF;
+    	letter-spacing: 0.4px;
+    	text-align: center;
+    	position: absolute;
+
+    	margin-top: 10px;
+    	background-color: #D8232A;
+    	width: 294px;
+    	height: 40px;
+        border: none;
+        border-radius: 2px;
+    }
+
+    .historyContainer {
+        display: flex;
+        flex-flow: row wrap;
+        width: 294px;
+        align-items: stretch;
+    }
+
+    .historyData {
+        flex-basis: 100%;
+    }
+
+    .historyItem{
+        width: 294px;
+        height: 100%;
+    }
+
+    #historyTab {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        height: 700px;
     }
 }
 

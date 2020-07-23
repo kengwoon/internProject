@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="pg1.css">
     <title>Daily Staff Movement and Health Declaration</title>
+    <script>
+      function showPage() {
+        var sel = document.getElementById('healthStatus');
+
+        var option = sel.options[sel.selectedIndex].value;
+
+        window.open(option);
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -12,7 +21,7 @@
       <div class="subheader">Submissions will be <span class="themeColor"> final at 10am</span></div>
     </header>
 
-    <form class="container">
+    <form class="container" id="link">
       <label for="movementStatus" class="fieldLabel"> Movement Status </label>
       <br>
       <select id="movementStatus" class="fieldValue">
@@ -23,7 +32,8 @@
       <label for="healthStatus" class="fieldLabel"> Health Status </label>
       <br>
       <select id="healthStatus" class="fieldValue">
-        <option value="well"> Well </option>
+        <option value="pg2.html"> Well </option>
+        <option value="unwellLink.html"> Unwell </option>
       </select>
       <br>
       
@@ -34,7 +44,8 @@
       </select>
       <br>
 
-      <input type="submit" class="submitButton" value="Submit">
+      <input type="submit" class="submitButton" value="Submit" onclick="showPage()">
     </form>
   </body>
+
 </html>
