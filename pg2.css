@@ -45,6 +45,10 @@ header {
     border-radius: 3px 0 0 3px;
 }
 
+.historyTab {
+    overflow-y: scroll;
+}
+
 .themeColor {
 	font-family: HelveticaNeue-Medium;
 	color: #D8232A;
