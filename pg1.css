@@ -4,6 +4,11 @@ html {
 	color: #4A4A4A;
 }
 
+body {
+    height: 100%;
+    border: none;
+}
+
 header {
 	font-family: HelveticaNeue-Medium;
 	font-size: 16px;
@@ -141,6 +146,7 @@ select {
 
 .container {
     width: 536px;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -160,6 +166,32 @@ select {
 	height: 40px;
     border: none;
     outline: none;
+    margin-bottom: 40px;
+
+}
+
+.submitButtonUnwell {
+    font-family: HelveticaNeue-Medium;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 0.4px;
+    text-align: center;
+
+    background-color: #D8232A;
+    border-radius: 4px;
+
+    margin-top: 10px;
+    width: 536px;
+    height: 40px;
+    border: none;
+    outline: none;
+    margin-bottom: 40px;
+}
+
+#historyTab {
+    height: 70vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 
@@ -259,9 +291,12 @@ hr {
     	padding: 20px;
     }
 
+    .pg2Header {
+        padding-bottom: 0px;
+    }
+
     body {
-        height: auto;
-        min-height: 93vh;
+        height: 100%;
     }
 
     .fieldValue {
@@ -293,6 +328,7 @@ hr {
     .fieldValueDate {
         margin-bottom: 20px;
         font-family: HelveticaNeue;
+        font-size: 15px;
         color: #4A4A4A;
 
         width: 280px;
@@ -302,8 +338,9 @@ hr {
 
     .fieldValueText {
         margin-bottom: 20px;
+        font-size: 15px;
         font-family: HelveticaNeue;
-        color: #4A4A4A;
+        color: #9B9B9B;
 
         height: 40px;
         padding-left: 10px;
@@ -313,7 +350,7 @@ hr {
     .container {
         width: 294px;
         height: auto;
-        min-height: 93vh;
+        min-height: 100%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -332,6 +369,7 @@ hr {
     	width: 294px;
     	height: 40px;
         border: none;
+        outline: none;
         border-radius: 2px;
     }
 
@@ -364,13 +402,12 @@ hr {
 
     .historyItem{
         width: 294px;
-        height: 100%;
     }
 
     #historyTab {
         overflow-x: hidden;
         overflow-y: scroll;
-        height: 700px;
+        height: 70vh;
     }
 }
 
