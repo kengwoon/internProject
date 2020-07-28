@@ -17,6 +17,12 @@
             $("#endDatePicker").datepicker();
         });
 
+        function changeDescription(index) {
+            var desc;
+            if (index == 0) desc = "Required to work on-site";
+            else if (index == 1) desc = "Working From Home";
+            $("#description").text(desc);
+        }
         
     </script>
 
@@ -30,10 +36,11 @@
     <form class="container" action="unwellCurrent.html">
         <label for="movementStatus" class="fieldLabel"> Movement Status </label>
         <br>
-        <select id="movementStatus" class="fieldValue">
+        <select id="movementStatus" class="fieldValue" onclick="if (typeof (this.selectedIndex) != 'undefined') changeDescription(this.selectedIndex)">
             <option value="workingInOffice"> Working in Office </option>
+            <option value="workingFromHome"> Working from Home </option>
         </select>
-        <div class="description"></div>
+        <div id="description">Required to work on-site</div>
 
         <label for="startDatePicker" class="fieldLabel"> Start Date </label>
         <br>
