@@ -1,71 +1,83 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="healthdeclaration.css">
+    <link rel="stylesheet" type="text/css" href="./jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="./healthdeclaration.css">
     <title>Daily Staff Movement and Health Declaration</title>
 
-  </head>
-  <body>
+</head>
+
+    <script src="./jquery-1.12.4.js"></script>
+    <script src="./jquery-ui-1.12.1.js"></script>
+    <script>
+        $(function () {
+            $("#startDatePicker").datepicker();
+            $("#endDatePicker").datepicker();
+        });
+    </script>
+
+<body>
     <header>
-      <div>Daily Staff Movement and Health Declaration</div>
-      <div class="subheader">Submissions will be <span class="themeColor"> final at 10am</span></div>
+        <div>Daily Staff Movement and Health Declaration</div>
+        <div class="subheader">Submissions will be <span class="themeColor"> final at 10am</span></div>
     </header>
 
-    <form class="container" action = "unwellCurrent.html">
-      <label for="movementStatus" class="fieldLabel"> Movement Status </label>
-      <br>
-      <select id="movementStatus" class="fieldValue">
-        <option value="workingInOffice"> Working in Office </option>
-      </select>
-      <br>
 
-      <label for="startDate" class="fieldLabel"> Start Date </label>
-      <br>
-      <input type="date" class="fieldValueDate" id="startDate" >
-      <br>
+    <form class="container" action="unwellCurrent.html">
+        <label for="movementStatus" class="fieldLabel"> Movement Status </label>
+        <br>
+        <select id="movementStatus" class="fieldValue">
+            <option value="workingInOffice"> Working in Office </option>
+        </select>
+        <br>
 
-      <label for="endDate" class="fieldLabel"> End Date</label>
-      <br>
-      <input class="fieldValueDate" type="date" id="endDate" >
-      <br>
+        <label for="startDatePicker" class="fieldLabel"> Start Date </label>
+        <br>
+        <input type="text" value="dd-mm-yyyy" class="fieldValueDate" id="startDatePicker">
+        <br>
 
-      <label for="duration" class="fieldLabel"> Duration </label>
-      <br>
-      <input type="text" class= "fieldValueText" id="duration" value = "5 days" disabled>
-      <br>
+        <label for="endDatePicker" class="fieldLabel"> End Date</label>
+        <br>
+        <input class="fieldValueDate" value="dd-mm-yyyy" type="text" id="endDatePicker">
+        <br>
 
-      <label for="healthStatus" class="fieldLabel"> Health Status </label>
-      <br>
-      <select id="healthStatus" class="fieldValue">
-        <option value="well"> Well </option>
-      </select>
-      <br>
+        <label for="duration" class="fieldLabel"> Duration </label>
+        <br>
+        <input type="text" class="fieldValueText" id="duration" value="5 days" disabled>
+        <br>
 
-      <label for="symptoms" class="fieldLabel"> Symptoms</label>
-      <br>
-      <div class="fieldLabel">
-        <input type="text" class= "fieldValueText" id="symptoms" value = "">
-      </div>
-      <br>
+        <label for="healthStatus" class="fieldLabel"> Health Status </label>
+        <br>
+        <select id="healthStatus" class="fieldValue">
+            <option value="well"> Well </option>
+        </select>
+        <br>
 
-      <label for="seenDoctor" class="fieldLabel"> Have Seen Doctor</label>
-      <br>
-      <select id="seenDoctor" class="fieldValue">
-        <option value="well"> Yes </option>
-        <option value="well"> No </option>
-      </select>
-      <br>
+        <label for="symptoms" class="fieldLabel"> Symptoms</label>
+        <br>
+        <div class="fieldLabel">
+            <input type="text" class="fieldValueText" id="symptoms" value="">
+        </div>
+        <br>
 
-      <label for="travelHistory" class="fieldLabel"> Travel History <span class="labelHint">(Past 14 days)</span></label>
-      <br>
-      <select id="travelHistory" class="fieldValue">
-        <option value="no"> No </option>
-      </select>
-      <br>
+        <label for="seenDoctor" class="fieldLabel"> Have Seen Doctor</label>
+        <br>
+        <select id="seenDoctor" class="fieldValue">
+            <option value="well"> Yes </option>
+            <option value="well"> No </option>
+        </select>
+        <br>
 
-      <input type="submit" class="submitButtonUnwell" value="Submit">
+        <label for="travelHistory" class="fieldLabel"> Travel History <span class="labelHint">(Past 14 days)</span></label>
+        <br>
+        <select id="travelHistory" class="fieldValue">
+            <option value="no"> No </option>
+        </select>
+        <br>
+
+        <input type="submit" class="submitButtonUnwell" value="Submit">
     </form>
-  </body>
+</body>
 </html>
