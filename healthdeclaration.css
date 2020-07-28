@@ -1,7 +1,36 @@
-html {
-	font-family: HelveticaNeue-Medium;
-	font-size: 16px;
-	color: #4A4A4A;
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('fonts/HelveticaNeue.woff2') format('woff2'),
+        url('fonts/HelveticaNeue.woff') format('woff'),
+        url('fonts/HelveticaNeue.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'HelveticaNeue-Bold';
+    src: url('fonts/HelveticaNeue-Bold.woff2') format('woff2'),
+        url('fonts/HelveticaNeue-Bold.woff') format('woff'),
+        url('fonts/HelveticaNeue-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'HelveticaNeue-Medium';
+    src: url('fonts/HelveticaNeue-Medium.woff2') format('woff2'),
+        url('fonts/HelveticaNeue-Medium.woff') format('woff'),
+        url('fonts/HelveticaNeue-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'HelveticaNeue-Light';
+    src: url('fonts/HelveticaNeueLight.woff2') format('woff2'),
+        url('fonts/HelveticaNeueLight.woff') format('woff'),
+        url('fonts/HelveticaNeueLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'HelveticaNeue-Italic';
+    src: url('fonts/HelveticaNeue-Italic.woff2') format('woff2'),
+        url('fonts/HelveticaNeue-Italic.woff') format('woff'),
+        url('fonts/HelveticaNeue-Italic.ttf') format('truetype');
 }
 
 body {
@@ -10,19 +39,39 @@ body {
 }
 
 header {
-	font-family: HelveticaNeue-Medium;
 	font-size: 16px;
 	color: #4A4A4A;
 	text-align: center;
 	padding: 40px;
 }
 
+.input {
+    font-family: HelveticaNeue;
+}
+
 .pg2Header {
     padding-bottom: 0px;
 }
 
-.subHeader {
-	font-family: HelveticaNeue-Regular;
+#mainheader {
+    font-family: HelveticaNeue-Medium;
+}
+
+#subheader {
+	font-family: HelveticaNeue;
+}
+
+.themeColor {
+	font-family: HelveticaNeue-Medium;
+	color: #D8232A;
+}
+
+.description {
+    font-family: HelveticaNeue-Italic;
+    font-size: 15px;
+    color: #9B9B9B;
+    letter-spacing: 0.23px;
+    margin-bottom: 20px;
 }
 
 .tab {
@@ -66,10 +115,6 @@ a {
     color: #FFFFFF;
 }
 
-.themeColor {
-	font-family: HelveticaNeue-Medium;
-	color: #D8232A;
-}
 
 .fieldLabel {
     font-family: HelveticaNeue-Bold;
@@ -99,6 +144,7 @@ a {
 
 .fieldValueDate {
     margin-bottom: 20px;
+    font-size: 15px;
     font-family: HelveticaNeue;
     color: #4A4A4A;
 
@@ -116,6 +162,7 @@ a {
 .fieldValueText {
     margin-bottom: 20px;
     font-family: HelveticaNeue;
+    font-size: 15px;
     color: #4A4A4A;
 
     width: 520px;
@@ -284,13 +331,11 @@ hr {
 
 @media screen and (max-width: 600px) {
     html {
-        font-family: HelveticaNeue-Medium;
         font-size: 16px;
         color: #4A4A4A;
     }
 
     header {
-    	font-family: HelveticaNeue-Medium;
     	font-size: 16px;
     	color: #4A4A4A;
     	text-align: center;
@@ -366,7 +411,7 @@ hr {
         margin-bottom: 20px;
         font-size: 15px;
         font-family: HelveticaNeue;
-        color: #9B9B9B;
+        color: #4A4A4A;
 
         height: 40px;
         padding-left: 10px;

@@ -16,12 +16,14 @@
             $("#startDatePicker").datepicker();
             $("#endDatePicker").datepicker();
         });
+
+        
     </script>
 
 <body>
     <header>
-        <div>Daily Staff Movement and Health Declaration</div>
-        <div class="subheader">Submissions will be <span class="themeColor"> final at 10am</span></div>
+        <div id="mainheader">Daily Staff Movement and Health Declaration</div>
+        <div id="subheader">Submissions will be <span class="themeColor">final at 10am</span></div>
     </header>
 
 
@@ -31,7 +33,7 @@
         <select id="movementStatus" class="fieldValue">
             <option value="workingInOffice"> Working in Office </option>
         </select>
-        <br>
+        <div class="description"></div>
 
         <label for="startDatePicker" class="fieldLabel"> Start Date </label>
         <br>
