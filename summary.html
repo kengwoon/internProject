@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="healthdeclaration.css">
+    <title>Daily Staff Movement and Health Declaration</title>
+    <script src="./jquery-1.12.4.js"></script>
+    <script src="./jquery-ui-1.12.1.js"></script>
+    <script>
+        function showPage() {
+            var sel = document.getElementById('healthStatus');
+
+            var option = sel.options[sel.selectedIndex].value;
+
+            window.open(option);
+        }
+        function changeDescription(index) {
+            var desc;
+            if (index == 0) desc = "Required to work on-site";
+            else if (index == 1) desc = "Working From Home";
+            $("#description").text(desc);
+        }
+    </script>
+</head>
+  <body>
+    <header>
+      <div id="summaryheader">You are declaring the following movement & health status:</div>
+    </header>
+
+    <div class="container">
+        <div id="currentTab" class="tabcontent">
+            <div class="fieldLabel">Movement Status</div>
+            <div class="pg2FieldValue">Working in Office</div>
+            <div class="fieldLabel">Health Status</div>
+            <div class="pg2FieldValue">Well</div>
+            <div class="fieldLabel">Travel History <span class="labelHint">(Past 14 days)</span></div>
+            <div class="pg2FieldValue">No</div>
+        </div>
+
+        <input type="submit" class="submitButton" value="Confirm" onclick="showPage()">
+    </div>
+  </body>
+
+</html>

@@ -57,6 +57,10 @@ header {
     font-family: HelveticaNeue-Medium;
 }
 
+#summaryheader {
+    font-family: HelveticaNeue-Medium;
+}
+
 #subheader {
 	font-family: HelveticaNeue;
 }
@@ -346,6 +350,11 @@ hr {
 
     .pg2Header {
         padding-bottom: 0px;
+    }
+
+    #summaryheader {
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
     body {
